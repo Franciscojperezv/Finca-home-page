@@ -1,0 +1,285 @@
+    body {
+        height: 100vh;
+        padding: 0;
+        margin: 0;
+        background-color: hsl(60, 20%, 100%);
+        display: flex;
+        flex-direction: column;
+        font-family: 'Rubik', Verdana, sans-serif;
+    }
+    header{
+        width: 100%;
+        color: #e6eaea;
+        background-color: #427fe0;
+        display: flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        column-gap: 2rem;
+    }
+    .main_header_img{
+        display: flex;
+        align-items: center;
+        height: fit-content;
+    }
+    .main_header_p {
+        font-size: 1.3rem;
+        margin-top: -1rem;
+    }
+    .main_header {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        padding: 0%;
+    }
+    .logo-loyola{
+        width: 250px;
+        height: auto;
+        align-self: center;
+    }
+    .main_header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nav-bar {
+        background-color: #1d56b3;
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        display: flex;
+        margin: 0;
+    }
+    .menu-bar {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);  
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        }
+    .menu-bar li {
+        display: flex;
+        margin-inline-start: 1rem;
+        max-height: 100%;
+        list-style: none;
+        color: white;
+        font-family: sans-serif;
+        font-weight: bold;
+        padding: 1rem 1.2rem;
+        margin: 0 1rem;
+        position: relative;
+        cursor: pointer;
+        white-space: wrap;
+    }
+    .menu-bar li:hover {
+        transition: .2s;
+        border-radius: 2rem;
+        color: black;
+        background: linear-gradient(to bottom, #e8edec, #cfd1d3);
+        box-shadow: 0px 3px 20px 0px black;
+        transform: scale(1.1);
+        }
+    .menu-bar li:active {
+        box-shadow: inset 0 0 10px 2px;
+        }
+    .menu-bar_focus{
+        transition: .2s;
+        border-radius: 2rem;
+        color: black !important;
+        background: linear-gradient(to bottom, #e8edec, #cfd1d3);
+        box-shadow: 0px 3px 20px 0px black;
+    }
+    #root{
+        position: relative;
+    }
+
+
+    /* De aquí en adelante se corresponde a los estilos de los diferentes menús  */
+    
+    /* Ventana de inicio */
+    .ventana_inicio{
+        width: fit-content;
+        margin: 2% 5%;
+        padding: 0;
+    }
+    .return-button{
+        position: absolute;
+        border-radius: 50%;
+        height: 30px;
+        width: 30px;
+        padding: 10px;
+        top: 15px;
+        left: 15px;
+        box-shadow: 0 0 10px -5px;
+    }
+    .return-button:hover{
+        transform: scale(1.1);
+        box-shadow: 0 0 10px 2px;
+    }
+    .return-button:active{
+        box-shadow: inset 0 0 3px 2px;
+    }
+    .return-button-img{
+        opacity: 1.5;
+    }
+    .inicio_bienvenida{
+        font-size: 3rem;
+        text-align: center;
+        margin: 1rem 3rem 0 3rem;
+    }
+    .inicio_iconos{
+        display: flex;
+        flex-wrap: wrap;
+        height: fit-content;
+        margin: 20px 0;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+    .inicio_icono-boton{
+        background-color:hsl(240, 40%, 98%);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 20px 20px;
+        min-width: 200px;
+        height: 100%;
+        gap: 20px;
+        margin: 10px 0;
+        box-shadow: 0 5px 15px 2px;
+        border-radius: 15px;
+        border-width: 3px;
+        border-style: solid;
+        border-color: gray;
+        cursor: pointer;
+    }
+    .inicio_icono-boton:hover{
+        transition: .3s;
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    .inicio_icono-boton:active{
+        background-color: #496a9e;
+        box-shadow: inset 0 0 10px 5px;
+    }
+    .img-comun{
+        width: auto;
+        height: 100px;
+    }
+
+    /* Ventana de próximas actividades */
+    .titulo_proximas_actividades{
+        font-size: 2.5rem;
+        text-align: center;
+        width: fit-content;
+        margin: 2% 10%;
+        padding: 0;
+    }
+    .lista_proximas_actividades{
+        background-color: hsl(210, 90%, 85%);
+        display: flex;
+        flex-direction: column;
+        margin: 2% 10%;
+        padding: 0 3rem 0 3rem;
+        align-items: center;
+        justify-content: center;
+        height: fit-content;
+        border-radius: 1rem;
+        border-width: 1px;
+        border-style: solid;
+        border-color: #496a9e;
+    }
+    .encabezado_actividades{
+        margin-bottom: 2rem;
+    }
+    .lista_proximas_actividades > ul{
+        margin: 1rem 0;
+        padding: 1rem 1rem;
+        display: flex;
+        width: 100%;
+        justify-content: space-between; 
+        list-style: none;
+        border-radius: 15px;
+    }
+    .lista_proximas_actividades > ul > li{
+        width: 25%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        margin: auto;
+    }
+    .lista_proximas_actividades > .actividad{
+        cursor: pointer;
+        margin: 0 0 0 0 !important;
+    }
+    .lista_proximas_actividades > .actividad:hover{
+        transform: scale(1.06);
+        transition: .3s;
+        color: white;
+        background-color: hsl(240, 10%, 20%);
+    }
+    .lista_proximas_actividades > .actividad:active{
+        background-color: #496a9e;
+        box-shadow: inset 0 0 10px 5px;
+    }
+    .encabezado_actividades{
+        font-weight: bold;
+    }
+    .linea_horizontal{
+        background-color: black;
+        height: 0.5px;
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Ventana de cultivos */
+    .seccion_cultivos{
+        margin: auto 15%;
+    }
+    .seccion_cultivos_btn-agregar{  
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 15px 20%;
+        margin: 5%;
+        height: fit-content;
+        font-size: 1.5rem;
+        box-shadow: 0 0 10px 0;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .seccion_cultivos_btn-agregar:hover{
+        transform: scale(1.025)
+    }
+    .seccion_cultivos_btn-agregar:active{
+        box-shadow: inset 0 0 20px 0;
+    }
+    /* Para pantallas pequeñas */
+    @media(max-width: 700px) {
+        .encabezado_actividades{
+            position: absolute;
+            visibility: hidden;
+        }
+        .lista_proximas_actividades{
+            padding: 0px;
+        }
+        .lista_proximas_actividades > ul{
+            margin: 0px 0px 0px 0px;
+            flex-direction: column;
+            align-items: center;
+        }
+        .lista_proximas_actividades > ul > li{
+            margin: 0.4rem -2rem;
+        }
+    }

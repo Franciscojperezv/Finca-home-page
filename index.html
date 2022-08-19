@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="styles_nav-bar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcScvh5OpVfEzZara1q9hvgYWRTCvXeXqeh-Pw&usqp=CAU">
+    <script crossorigin src="https://unpkg.com/react@17/umd/react.development.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="script_nav-bar.js" type="text/babel"></script>
+</head>
+<body>
+        <header>
+            <div class="main_header_img">
+                <img class="logo-loyola" src="https://ipl.edu.do/images/logo-loyola.svg" alt="logo-loyola">
+            </div>
+            <div class="main_header">
+                <h1>Finca Experimental</h1>
+                <p class="main_header_p">Profesor André Vloebergh</p>
+            </div>
+        </header>
+  
+        <nav class="nav-bar">
+            <ul class= menu-bar>
+                <li id="inicio" class="menu-inicio" onclick="navInicio()">Inicio</li>
+                <li id="proximas" class="menu-proximas" onclick="navProximas()">Próximas actividades</li>
+                <li id="cultivos" class="menu-cultivos" onclick="navCultivos()">Cultivos</li>
+                <li id="campos" class="menu-campos" onclick="navCampos()">Campos</li>
+                <li id="perfil" class="menu-perfil" onclick="navPerfil()">Mi Perfil</li>            
+            </ul>
+        </nav>
+        <main id="root">
+        </main>
+</body>
+</html>
